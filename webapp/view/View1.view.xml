@@ -1,0 +1,35 @@
+<mvc:View controllerName="databinding.databindingproject.controller.App"
+          xmlns:l="sap.ui.layout"
+          xmlns:mvc="sap.ui.core.mvc"
+          displayBlock="true"
+          xmlns="sap.m">
+
+    <Shell id="shell">
+        <App id="app1">
+            <pages>
+                <Page id="page" title="{i18n>title}">
+                    <content>
+                        <Panel id="_IDGenPanel" headerText="{i18n>myInfo}" class="sapUiResponsiveMargin" width="auto">
+                            <content>
+                                <l:VerticalLayout id="_IDGenVerticalLayout1">
+                                    <Label id="_IDGenLabel" text="{i18n>firstName}" class="sapUiTinyMarginTop"/>
+                                    <Text id="_IDGenText" text="{/firstName}"/>
+                                    <Label id="_IDGenLabel1" text="{i18n>lastName}" class="sapUiTinyMarginTop"/>
+                                    <Text id="_IDGenText1" text="{/lastName}"/>
+                                    <Label id="_IDGenLabel2" text="{i18n>address}" class="sapUiTinyMarginTop"/>
+                                    <Text id="_IDGenText2" text="{/address/street}"/>
+                                    <Text id="_IDGenText3" text="{/address/city}"/>
+                                    <Text id="_IDGenText4" text="{/address/zip}"/>
+                                    <Text id="_IDGenText5" text="{/address/country}"/>
+                                    <List id="_IDGenList" items="{/hobbies}">
+                                        <StandardListItem id="_IDGenStandardListItem" title="{name}" description="{skill}"/>
+                                    </List>
+                                </l:VerticalLayout>
+                            </content>
+                        </Panel>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

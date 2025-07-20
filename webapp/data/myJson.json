@@ -1,0 +1,26 @@
+{
+  "firstName": "Milton",
+  "lastName": "Chandradass",
+  "city": "Atlanta",
+  "company": "SAP",
+  "address": {
+    "street": "8000 Avalon Blvd",
+    "city": "Alpharetta",
+    "zip": "30004",
+    "country": "US"
+  },
+  "hobbies": [
+    {
+      "name": "tennis",
+      "skill": "medium"
+    },
+    {
+      "name": "soccer",
+      "skill": "low"
+    },
+    {
+      "name": "chess",
+      "skill": "low"
+    }
+  ]
+}
